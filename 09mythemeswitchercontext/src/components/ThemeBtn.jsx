@@ -18,10 +18,7 @@ export default function ThemeBtn() {
     useEffect(() => {
         document.querySelector('html').classList.remove("light", "dark")
         document.querySelector('html').classList.add(themeMode);
-        // setTheme{ { themeMode } }
     }, [themeMode])
-
-
 
     const onChangeBtn = (e) => {
         const darkModeStatus = e.target.checked;

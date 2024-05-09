@@ -4,8 +4,6 @@ import ThemeProvider from "./context/ThemeContextProvider";
 
 const App = () => {
 
-
-
   return (
     <ThemeProvider >
       <div className="flex flex-wrap min-h-screen items-center">
