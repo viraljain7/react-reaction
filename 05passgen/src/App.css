@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Sail&display=swap");
+#root {
+  width: 100vw;
+  height: 100vh;
+  /* padding: 20px 0; */
+  text-align: center;
+}
+.read-the-docs {
+  color: #888;
+}
+h1 {
+  /* font-family: "Cedarville Cursive", cursive; */
+  font-family: "Sail", system-ui;
+  /* font-family: "Monsieur La Doulaise", cursive; */
+}

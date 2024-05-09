@@ -1,0 +1,10 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  /* padding: 20px 0; */
+  text-align: center;
+}
+
+.read-the-docs {
+  color: #888;
+}
