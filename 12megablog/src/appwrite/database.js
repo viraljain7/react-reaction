@@ -67,38 +67,35 @@ export class Service {
             return false;
         }
     }
-    // getPost
-    async getPosts({ slug }) {
+    async getPost(slug) {
         try {
             return await this.databases.getDocument(
                 conf.appwriteDatabaseId,
                 conf.appwriteCollectionId,
-                slug,
+                slug
+
             )
-            // return true;
         } catch (error) {
-            console.log("Appwrite Service :: getPost :: error::", error);
-            throw error;
-            // return false;
+            console.log("Appwrite serive :: getPost :: error", error);
+            return false
         }
     }
-    // getAllPost
-    async getAllPost(queries = [Query.equal("status", "active")]) {
+
+    async getPosts(queries = [Query.equal("status", "active")]) {
         try {
             return await this.databases.listDocuments(
                 conf.appwriteDatabaseId,
                 conf.appwriteCollectionId,
                 queries,
-                100,//pagination
-                0, //result
+
+
             )
-            // return true;
         } catch (error) {
-            console.log("Appwrite Service :: getAllPost :: error::", error);
-            throw error;
-            // return false;
+            console.log("Appwrite serive :: getPosts :: error", error);
+            return false
         }
     }
+
 }
 
 const databaseService = new Service()
