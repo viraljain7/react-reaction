@@ -291,7 +291,7 @@ export default databaseService;
 ## appwrite/bucket.js
 
 ```js
-import { Client, Storage, ID, Databases, Query } from "appwrite";
+import { Client, Storage, ID,  } from "appwrite";
 import conf from "../conf/conf.js";
 
 export class Service {
