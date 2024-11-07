@@ -345,7 +345,6 @@ export default bucketService;
         try {
             await this.bucket.deleteFile(
                 conf.appwriteBucketId,
-                ID.unique(),
                 fileId
             )
             return true;
