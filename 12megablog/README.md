@@ -141,7 +141,7 @@ async logOut() {
 ## appwrite/database.js
 
 ```js
-import { Client, ID, Databases, Query } from "appwrite";
+import { Client,  Databases, Query } from "appwrite";
 import conf from "../conf/conf.js";
 
 export class Service {
@@ -226,7 +226,7 @@ export default databaseService;
 ```js
 
   // deletePost
-  async deletePost({ slug }) {
+  async deletePost(slug ) {
     try {
       await this.databases.deleteDocument(
         conf.appwriteDatabaseId,
@@ -248,7 +248,7 @@ export default databaseService;
 ```js
 
 // getPost
-  async getPost({ slug }) {
+  async getPost(slug ) {
     try {
       return await this.databases.getDocument(
         conf.appwriteDatabaseId,
