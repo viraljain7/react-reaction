@@ -5,7 +5,7 @@ npm install @reduxjs/toolkit react-redux react-router-dom appwrite @tinymce/tiny
 ```
 
 ## Appwrite folder Structure
-
+```js
 ├── Project
 │ ├── overview (setting)
 │ ├── Auth
@@ -13,7 +13,7 @@ npm install @reduxjs/toolkit react-redux react-router-dom appwrite @tinymce/tiny
 │ │ ├── Collection
 │ ├── Function
 │ ├── Storage(Bucket) (permission)
-
+```
 ## Appwrite Config and .env
 
 ```js
